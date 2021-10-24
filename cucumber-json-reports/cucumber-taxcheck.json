@@ -1,0 +1,51 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-24T05:52:18.436Z",
+        "line": 10,
+        "name": "Verify tax",
+        "description": "",
+        "id": "car-tax-verify;verify-tax;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.assertj.core.error.AssertJMultipleFailuresError: \r\nMultiple Failures (1 failure)\r\n-- failure 1 --\r\nexpected: VehicleIdentity{registration\u003d\u0027BW57BOF\u0027, make\u003d\u0027Toyota\u0027, model\u003d\u0027Yaris T2\u0027, colour\u003d\u0027Black\u0027, year\u003d\u00272010\u0027}\r\nbut was : VehicleIdentity{registration\u003d\u0027BW57BOF\u0027, make\u003d\u0027Toyota\u0027, model\u003d\u0027Yaris T2\u0027, colour\u003d\u0027Red\u0027, year\u003d\u00272008\u0027}\r\nat CarTaxCheckStepdefs.lambda$vehicleIdentityCheck$0(CarTaxCheckStepdefs.java:41)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat com.cartaxcheck.stepdefs.CarTaxCheckStepdefs.vehicleIdentityCheck(CarTaxCheckStepdefs.java:44)\r\n\tat ✽.Vehicle Identity of reg numbers from inputFile should match against outputFile(classpath:features/CarTaxVerify.feature:4)\r\n",
+              "duration": 9010000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Vehicle Identity of reg numbers from inputFile should match against outputFile",
+            "match": {
+              "location": "com.cartaxcheck.stepdefs.CarTaxCheckStepdefs.vehicleIdentityCheck(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "inputFile",
+                  "outputFile"
+                ]
+              },
+              {
+                "cells": [
+                  "car_input.txt",
+                  "car_output.txt"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Car Tax Verify",
+    "description": "",
+    "id": "car-tax-verify",
+    "keyword": "Feature",
+    "uri": "classpath:features/CarTaxVerify.feature",
+    "tags": []
+  }
+]
